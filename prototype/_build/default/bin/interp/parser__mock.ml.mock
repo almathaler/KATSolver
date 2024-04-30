@@ -1,0 +1,199 @@
+
+type token = 
+  | ZERO
+  | STAR
+  | RPAREN
+  | PTEST of (
+# 7 "bin/interp/parser.mly"
+       (char)
+# 10 "bin/interp/parser__mock.ml.mock"
+)
+  | PLUS
+  | PACTION of (
+# 8 "bin/interp/parser.mly"
+       (char)
+# 16 "bin/interp/parser__mock.ml.mock"
+)
+  | ONE
+  | NEG
+  | LPAREN
+  | EOF
+
+# 1 "bin/interp/parser.mly"
+  
+    open Kat
+
+# 27 "bin/interp/parser__mock.ml.mock"
+
+let menhir_begin_marker =
+  0
+
+and (xv_kat_sum_or_subterm, xv_kat_subterm, xv_kat_prod_or_subterm, xv_kat_expr) =
+  let _ = fun (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
+# 27 "bin/interp/parser.mly"
+                                  e2
+# 36 "bin/interp/parser__mock.ml.mock"
+   : 'tv_kat_prod_or_subterm) (_startpos_e2_ : Lexing.position) (_endpos_e2_ : Lexing.position) (_startofs_e2_ : int) (_endofs_e2_ : int) (_loc_e2_ : Lexing.position * Lexing.position) (
+# 27 "bin/interp/parser.mly"
+                           _2
+# 40 "bin/interp/parser__mock.ml.mock"
+   : unit) (_startpos__2_ : Lexing.position) (_endpos__2_ : Lexing.position) (_startofs__2_ : int) (_endofs__2_ : int) (_loc__2_ : Lexing.position * Lexing.position) (
+# 27 "bin/interp/parser.mly"
+  e1
+# 44 "bin/interp/parser__mock.ml.mock"
+   : 'tv_kat_prod_or_subterm) (_startpos_e1_ : Lexing.position) (_endpos_e1_ : Lexing.position) (_startofs_e1_ : int) (_endofs_e1_ : int) (_loc_e1_ : Lexing.position * Lexing.position) : 'tv_kat_sum_or_subterm ->
+    
+# 27 "bin/interp/parser.mly"
+                                                           (Sum (e1, e2))
+# 49 "bin/interp/parser__mock.ml.mock"
+     in
+  let _ = fun (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
+# 26 "bin/interp/parser.mly"
+  e
+# 54 "bin/interp/parser__mock.ml.mock"
+   : 'tv_kat_prod_or_subterm) (_startpos_e_ : Lexing.position) (_endpos_e_ : Lexing.position) (_startofs_e_ : int) (_endofs_e_ : int) (_loc_e_ : Lexing.position * Lexing.position) : 'tv_kat_sum_or_subterm ->
+    
+# 26 "bin/interp/parser.mly"
+                          (e)
+# 59 "bin/interp/parser__mock.ml.mock"
+     in
+  let _ = fun (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
+# 40 "bin/interp/parser.mly"
+ _1
+# 64 "bin/interp/parser__mock.ml.mock"
+   : unit) (_startpos__1_ : Lexing.position) (_endpos__1_ : Lexing.position) (_startofs__1_ : int) (_endofs__1_ : int) (_loc__1_ : Lexing.position * Lexing.position) : 'tv_kat_subterm ->
+    
+# 40 "bin/interp/parser.mly"
+      (failwith("todo"))
+# 69 "bin/interp/parser__mock.ml.mock"
+     in
+  let _ = fun (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
+# 39 "bin/interp/parser.mly"
+  b
+# 74 "bin/interp/parser__mock.ml.mock"
+   : (
+# 7 "bin/interp/parser.mly"
+       (char)
+# 78 "bin/interp/parser__mock.ml.mock"
+  )) (_startpos_b_ : Lexing.position) (_endpos_b_ : Lexing.position) (_startofs_b_ : int) (_endofs_b_ : int) (_loc_b_ : Lexing.position * Lexing.position) : 'tv_kat_subterm ->
+    
+# 39 "bin/interp/parser.mly"
+            (Test PTest (b))
+# 83 "bin/interp/parser__mock.ml.mock"
+     in
+  let _ = fun (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
+# 38 "bin/interp/parser.mly"
+  x
+# 88 "bin/interp/parser__mock.ml.mock"
+   : (
+# 8 "bin/interp/parser.mly"
+       (char)
+# 92 "bin/interp/parser__mock.ml.mock"
+  )) (_startpos_x_ : Lexing.position) (_endpos_x_ : Lexing.position) (_startofs_x_ : int) (_endofs_x_ : int) (_loc_x_ : Lexing.position * Lexing.position) : 'tv_kat_subterm ->
+    
+# 38 "bin/interp/parser.mly"
+              (PAction (x))
+# 97 "bin/interp/parser__mock.ml.mock"
+     in
+  let _ = fun (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
+# 37 "bin/interp/parser.mly"
+                  _2
+# 102 "bin/interp/parser__mock.ml.mock"
+   : unit) (_startpos__2_ : Lexing.position) (_endpos__2_ : Lexing.position) (_startofs__2_ : int) (_endofs__2_ : int) (_loc__2_ : Lexing.position * Lexing.position) (
+# 37 "bin/interp/parser.mly"
+  e
+# 106 "bin/interp/parser__mock.ml.mock"
+   : 'tv_kat_subterm) (_startpos_e_ : Lexing.position) (_endpos_e_ : Lexing.position) (_startofs_e_ : int) (_endofs_e_ : int) (_loc_e_ : Lexing.position * Lexing.position) : 'tv_kat_subterm ->
+    
+# 37 "bin/interp/parser.mly"
+                        (Star (e))
+# 111 "bin/interp/parser__mock.ml.mock"
+     in
+  let _ = fun (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
+# 36 "bin/interp/parser.mly"
+                       _3
+# 116 "bin/interp/parser__mock.ml.mock"
+   : unit) (_startpos__3_ : Lexing.position) (_endpos__3_ : Lexing.position) (_startofs__3_ : int) (_endofs__3_ : int) (_loc__3_ : Lexing.position * Lexing.position) ((
+# 36 "bin/interp/parser.mly"
+          e
+# 120 "bin/interp/parser__mock.ml.mock"
+   : 'tv_kat_expr) : (
+# 18 "bin/interp/parser.mly"
+       (Kat.expr)
+# 124 "bin/interp/parser__mock.ml.mock"
+  )) (_startpos_e_ : Lexing.position) (_endpos_e_ : Lexing.position) (_startofs_e_ : int) (_endofs_e_ : int) (_loc_e_ : Lexing.position * Lexing.position) (
+# 36 "bin/interp/parser.mly"
+ _1
+# 128 "bin/interp/parser__mock.ml.mock"
+   : unit) (_startpos__1_ : Lexing.position) (_endpos__1_ : Lexing.position) (_startofs__1_ : int) (_endofs__1_ : int) (_loc__1_ : Lexing.position * Lexing.position) : 'tv_kat_subterm ->
+    
+# 36 "bin/interp/parser.mly"
+                               (e)
+# 133 "bin/interp/parser__mock.ml.mock"
+     in
+  let _ = fun (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
+# 35 "bin/interp/parser.mly"
+ _1
+# 138 "bin/interp/parser__mock.ml.mock"
+   : unit) (_startpos__1_ : Lexing.position) (_endpos__1_ : Lexing.position) (_startofs__1_ : int) (_endofs__1_ : int) (_loc__1_ : Lexing.position * Lexing.position) : 'tv_kat_subterm ->
+    
+# 35 "bin/interp/parser.mly"
+      (Test One)
+# 143 "bin/interp/parser__mock.ml.mock"
+     in
+  let _ = fun (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
+# 34 "bin/interp/parser.mly"
+ _1
+# 148 "bin/interp/parser__mock.ml.mock"
+   : unit) (_startpos__1_ : Lexing.position) (_endpos__1_ : Lexing.position) (_startofs__1_ : int) (_endofs__1_ : int) (_loc__1_ : Lexing.position * Lexing.position) : 'tv_kat_subterm ->
+    
+# 34 "bin/interp/parser.mly"
+       (Test Zero)
+# 153 "bin/interp/parser__mock.ml.mock"
+     in
+  let _ = fun (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
+# 31 "bin/interp/parser.mly"
+                    e2
+# 158 "bin/interp/parser__mock.ml.mock"
+   : 'tv_kat_subterm) (_startpos_e2_ : Lexing.position) (_endpos_e2_ : Lexing.position) (_startofs_e2_ : int) (_endofs_e2_ : int) (_loc_e2_ : Lexing.position * Lexing.position) (
+# 31 "bin/interp/parser.mly"
+  e1
+# 162 "bin/interp/parser__mock.ml.mock"
+   : 'tv_kat_subterm) (_startpos_e1_ : Lexing.position) (_endpos_e1_ : Lexing.position) (_startofs_e1_ : int) (_endofs_e1_ : int) (_loc_e1_ : Lexing.position * Lexing.position) : 'tv_kat_prod_or_subterm ->
+    
+# 31 "bin/interp/parser.mly"
+                                     (Prod (e1, e2))
+# 167 "bin/interp/parser__mock.ml.mock"
+     in
+  let _ = fun (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
+# 30 "bin/interp/parser.mly"
+  e
+# 172 "bin/interp/parser__mock.ml.mock"
+   : 'tv_kat_subterm) (_startpos_e_ : Lexing.position) (_endpos_e_ : Lexing.position) (_startofs_e_ : int) (_endofs_e_ : int) (_loc_e_ : Lexing.position * Lexing.position) : 'tv_kat_prod_or_subterm ->
+    
+# 30 "bin/interp/parser.mly"
+                  (e)
+# 177 "bin/interp/parser__mock.ml.mock"
+     in
+  let _ = fun (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
+# 23 "bin/interp/parser.mly"
+                         _2
+# 182 "bin/interp/parser__mock.ml.mock"
+   : unit) (_startpos__2_ : Lexing.position) (_endpos__2_ : Lexing.position) (_startofs__2_ : int) (_endofs__2_ : int) (_loc__2_ : Lexing.position * Lexing.position) (
+# 23 "bin/interp/parser.mly"
+  e
+# 186 "bin/interp/parser__mock.ml.mock"
+   : 'tv_kat_sum_or_subterm) (_startpos_e_ : Lexing.position) (_endpos_e_ : Lexing.position) (_startofs_e_ : int) (_endofs_e_ : int) (_loc_e_ : Lexing.position * Lexing.position) : (
+# 18 "bin/interp/parser.mly"
+       (Kat.expr)
+# 190 "bin/interp/parser__mock.ml.mock"
+  ) ->
+    (
+# 23 "bin/interp/parser.mly"
+                              (e)
+# 195 "bin/interp/parser__mock.ml.mock"
+     : 'tv_kat_expr) in
+  ((let rec diverge() = diverge() in diverge()) : 'tv_kat_sum_or_subterm * 'tv_kat_subterm * 'tv_kat_prod_or_subterm * 'tv_kat_expr)
+
+and menhir_end_marker =
+  0
