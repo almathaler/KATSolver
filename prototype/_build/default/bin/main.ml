@@ -9,8 +9,23 @@ It determines equality %s.
 " iteration strat
 
 let display_kat_syntax () = 
-  Format.printf "TODO
+  Format.printf "
+KAT SYNTAX:
+- Primitive actions : (m-z)
+- Primitive tests : (a-l)
+- Multiplication / Conjunction: Implicit
+- Addition / Disjunction: (+)
+- Kleene star: (*)
+- Negation: (!)
+- Zero: (0)
+- One: (1)
+Precedence is:
+Parenthesis > Negation > Kleene Star > Multiplication > Addition
+Example expression: 
+x(x+y)*!ab
+
 "
+(* TODO: Is it * > ! or ! > *? *)
 
 let request_and_parse_exprs () = 
   print_endline "Please input the first expression, or enter `#` to print KAT syntax";
