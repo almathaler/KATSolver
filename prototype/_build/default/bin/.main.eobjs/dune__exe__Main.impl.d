@@ -1,1 +1,1 @@
-bin/main.ml: Kat
+bin/main.ml: Format
