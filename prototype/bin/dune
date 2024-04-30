@@ -2,3 +2,8 @@
  (public_name prototype)
  (name main)
  (libraries prototype))
+
+(menhir
+ (modules parser))
+
+(ocamllex lexer)

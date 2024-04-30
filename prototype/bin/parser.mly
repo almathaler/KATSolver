@@ -13,8 +13,6 @@
 %token STAR
 %token EOF
 
-%left PLUS
-
 %start <Kat.expr> kat_expr 
 
 %%

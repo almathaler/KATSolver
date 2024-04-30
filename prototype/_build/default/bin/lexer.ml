@@ -1,8 +1,8 @@
-# 1 "bin/interp/lexer.mll"
- 
+# 1 "bin/lexer.mll"
+   
     open Parser
 
-# 6 "bin/interp/lexer.ml"
+# 6 "bin/lexer.ml"
 let __ocaml_lex_tables = {
   Lexing.lex_base =
    "\000\000\245\255\246\255\247\255\248\255\249\255\250\255\251\255\
@@ -100,59 +100,59 @@ let rec read lexbuf =
 and __ocaml_lex_read_rec lexbuf __ocaml_lex_state =
   match Lexing.engine __ocaml_lex_tables __ocaml_lex_state lexbuf with
       | 0 ->
-# 11 "bin/interp/lexer.mll"
+# 11 "bin/lexer.mll"
             ( read lexbuf )
-# 106 "bin/interp/lexer.ml"
+# 106 "bin/lexer.ml"
 
   | 1 ->
-# 12 "bin/interp/lexer.mll"
+# 12 "bin/lexer.mll"
           (ZERO)
-# 111 "bin/interp/lexer.ml"
+# 111 "bin/lexer.ml"
 
   | 2 ->
-# 13 "bin/interp/lexer.mll"
+# 13 "bin/lexer.mll"
           (ONE)
-# 116 "bin/interp/lexer.ml"
+# 116 "bin/lexer.ml"
 
   | 3 ->
-# 14 "bin/interp/lexer.mll"
+# 14 "bin/lexer.mll"
             (PTEST (Lexing.lexeme lexbuf))
-# 121 "bin/interp/lexer.ml"
+# 121 "bin/lexer.ml"
 
   | 4 ->
-# 15 "bin/interp/lexer.mll"
+# 15 "bin/lexer.mll"
               (PACTION (Lexing.lexeme lexbuf))
-# 126 "bin/interp/lexer.ml"
+# 126 "bin/lexer.ml"
 
   | 5 ->
-# 16 "bin/interp/lexer.mll"
+# 16 "bin/lexer.mll"
           (LPAREN)
-# 131 "bin/interp/lexer.ml"
+# 131 "bin/lexer.ml"
 
   | 6 ->
-# 17 "bin/interp/lexer.mll"
+# 17 "bin/lexer.mll"
           (RPAREN)
-# 136 "bin/interp/lexer.ml"
+# 136 "bin/lexer.ml"
 
   | 7 ->
-# 18 "bin/interp/lexer.mll"
+# 18 "bin/lexer.mll"
           (PLUS)
-# 141 "bin/interp/lexer.ml"
+# 141 "bin/lexer.ml"
 
   | 8 ->
-# 19 "bin/interp/lexer.mll"
+# 19 "bin/lexer.mll"
           (NEG)
-# 146 "bin/interp/lexer.ml"
+# 146 "bin/lexer.ml"
 
   | 9 ->
-# 20 "bin/interp/lexer.mll"
+# 20 "bin/lexer.mll"
           (STAR)
-# 151 "bin/interp/lexer.ml"
+# 151 "bin/lexer.ml"
 
   | 10 ->
-# 21 "bin/interp/lexer.mll"
+# 21 "bin/lexer.mll"
           (EOF)
-# 156 "bin/interp/lexer.ml"
+# 156 "bin/lexer.ml"
 
   | __ocaml_lex_state -> lexbuf.Lexing.refill_buff lexbuf;
       __ocaml_lex_read_rec lexbuf __ocaml_lex_state

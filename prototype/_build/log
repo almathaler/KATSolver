@@ -13,11 +13,12 @@
 #  ; build_dir = In_build_dir "default"
 #  ; instrument_with = []
 #  }
-$ /Users/almathaler/.opam/current/bin/ocamlc.opt -config > /var/folders/6f/bc90rmjn0hlcbyjf7g931g_w0000gn/T/dune_2c648e_output
-$ (cd _build/.sandbox/0da789d133e04bf449557cd184d228af/default && /Users/almathaler/.opam/current/bin/menhir bin/interp/parser.mly --base bin/interp/parser --infer-write-query bin/interp/parser__mock.ml.mock)
-$ (cd _build/default && /Users/almathaler/.opam/current/bin/ocamldep.opt -modules -impl bin/interp/parser__mock.ml.mock) > _build/default/bin/interp/.interp.objs/parser__mock.impl.d
-> File "bin/interp/parser.mly", line 39, characters 24-25:
+$ /Users/almathaler/.opam/current/bin/ocamlc.opt -config > /var/folders/6f/bc90rmjn0hlcbyjf7g931g_w0000gn/T/dune_2495c4_output
+$ (cd _build/default && /Users/almathaler/.opam/current/bin/ocamllex -q -o bin/lexer.ml bin/lexer.mll)
+$ (cd _build/.sandbox/918fc3ee1eaffb451527f42185293f1a/default && /Users/almathaler/.opam/current/bin/menhir bin/parser.mly --base bin/parser --infer-write-query bin/parser__mock.ml.mock)
+$ (cd _build/default && /Users/almathaler/.opam/current/bin/ocamldep.opt -modules -impl bin/parser__mock.ml.mock) > _build/default/bin/.main.eobjs/parser__mock.impl.d
+> File "bin/parser.mly", line 49, characters 72-73:
 > Error: Syntax error: ')' expected
-> File "bin/interp/parser.mly", line 39, characters 12-13:
+> File "bin/parser.mly", line 49, characters 61-62:
 >   This '(' might be unmatched
 [2]
